@@ -11,7 +11,6 @@ img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
 def on_button_click():
     gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    # cv2.imshow('Grayscale Image', gray_img)
     # 윤곽선 찾기
     edges = cv2.Canny(gray_img, 100, 200)# 윤곽선 찾기(이미지, 낮은 임계값, 높은 임계값)
     cv2.imshow('윤곽선 창', edges)
